@@ -1,1 +1,1 @@
-clean_tree=false
+clean_tree=true

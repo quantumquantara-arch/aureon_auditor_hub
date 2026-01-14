@@ -7,6 +7,7 @@ AUDIT_REPORT_GEMINI.md
 AUDIT_REPORT_GROK.md
 CONTRIBUTING.md
 README.md
+audits/canonical/.gitkeep
 audits/canonical/clean_tree.txt
 audits/canonical/commit.txt
 audits/canonical/dirty_status.txt
@@ -22,11 +23,13 @@ audits/latest/clean_tree.txt
 audits/latest/commit.txt
 audits/latest/dirty_status.txt
 audits/latest/expected_hash.txt
+audits/latest/expected_output_hash.txt
 audits/latest/input.txt
 audits/latest/output.txt
 audits/latest/output_hash.txt
 audits/latest/reason.txt
 audits/latest/result.txt
+audits/latest/tool_hash.txt
 audits/latest/tree.txt
 docs/AUDITOR_GUIDE.md
 docs/AUDITOR_INSTRUCTIONS.md
