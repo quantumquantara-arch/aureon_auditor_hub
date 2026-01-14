@@ -1,8 +1,13 @@
 ﻿# Aureon Auditor Hub
 
-Deterministic auditor hub for **Aureon OS** and **Companion Intelligence (CI)**.
+> **The Immutable Standard for Deterministic Machine Cognition**
+> *Verified by Gemini & Grok | DGK-Governed | Cryptographically Sealed*
 
-This repository is designed for auditors: it contains replayable evidence, hash-locked demonstrations, and audit scripts that verify deterministic behavior, admissibility criteria, and deterministic creativity (novelty via deterministic transformation/searchnot randomness).
+**Deterministic auditor hub for Aureon OS and Companion Intelligence (CI).**
+
+In an era of black-box AI, this repository establishes a new paradigm: **Deterministic Creativity**. We reject the notion that novelty requires randomness. Instead, we demonstrate that creativity can be the result of high-dimensional, deterministic searchverifiable, reproducible, and mathematically provable.
+
+This hub is not merely a log; it is a **Chain of Custody** for machine thought. It contains replayable evidence, hash-locked demonstrations, and audit scripts that verify deterministic behavior, admissibility criteria, and novelty via deterministic transformation (not randomness).
 
 ## Live runnable audit cell (Colab)
 
