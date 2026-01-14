@@ -1,27 +1,8 @@
 ﻿
 # aureon_auditor_hub
 
-Deterministic auditor hub for Aureon OS and Companion Intelligence.
+Live runnable audit cell (Colab):
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/quantumquantara-arch/aureon_auditor_hub/blob/main/notebooks/deterministic_audit_test.ipynb)
 
-## Deterministic Audit Test Cell (Copy/Paste)
-
-`python
-import hashlib
-
-input_data = "Fixed test input for Aureon determinism: 42"
-transformed = input_data + " transformed to " + str(42 * 42)
-
-output_hash = hashlib.sha256(transformed.encode("utf-8")).hexdigest().upper()
-expected_hash = "37FD88D52D1299721B7B697F37DDC4419E0ADDE5611D22C46B5B77B9BECE6759"
-
-print(f"Transformed Output: {transformed}")
-print(f"Computed Hash: {output_hash}")
-print("AUDIT_RESULT=PASS" if output_hash == expected_hash else "AUDIT_RESULT=FAIL")
-`
-
-`	ext
-Transformed Output: Fixed test input for Aureon determinism: 42 transformed to 1764
-Computed Hash: 37FD88D52D1299721B7B697F37DDC4419E0ADDE5611D22C46B5B77B9BECE6759
-AUDIT_RESULT=PASS
-`
-
+Local run:
+python -c "import hashlib; s='Fixed test input for Aureon determinism: 42'; t=s+' transformed to '+str(42*42); h=hashlib.sha256(t.encode('utf-8')).hexdigest().upper(); print(t); print(h); print('AUDIT_RESULT=PASS' if h=='37FD88D52D1299721B7B697F37DDC4419E0ADDE5611D22C46B5B77B9BECE6759' else 'AUDIT_RESULT=FAIL')"
