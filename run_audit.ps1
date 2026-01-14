@@ -1,4 +1,4 @@
-﻿param()
+param()
 $ErrorActionPreference = 'Stop'
 
 # --- Context: quantumquantara-arch/aureon_auditor_hub ---
