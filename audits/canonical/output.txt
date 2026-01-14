@@ -1,0 +1,1 @@
+﻿Fixed test input for Aureon determinism: 42 transformed to 1764
