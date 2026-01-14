@@ -1,9 +1,4 @@
-﻿DGK Admissibility
-
-Admissible outputs must:
-- Be reproducible bit-for-bit
-- Preserve declared invariants
-- Contain no stochastic residue
-- Provide provenance to source artifacts
-
-Any output failing these criteria is non-admissible.
+﻿DGK Admissibility Invariants:
+- Reproducible bit-for-bit from inputs.
+- No stochastic residue in outputs.
+- Binary pass/fail based on hash match.

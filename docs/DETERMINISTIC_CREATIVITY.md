@@ -1,9 +1,5 @@
-﻿Deterministic Creativity
-
-Creativity in Aureon does not rely on randomness.
-Novel outputs are produced through:
-- Deterministic transformation
-- Constraint-guided synthesis
-- Structured search over finite spaces
-
-Replay of the same inputs yields identical outputs.
+﻿Deterministic Creativity Definition:
+- Transformation: Fixed rules for recombination.
+- Search: Structured lattice traversal.
+- Synthesis: Constraint-guided without randomness.
+- Replay: Identical novelty on re-run.
