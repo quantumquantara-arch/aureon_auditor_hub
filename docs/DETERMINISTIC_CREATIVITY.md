@@ -1,5 +1,4 @@
 ﻿Deterministic Creativity Definition:
-- Transformation: Fixed rules for recombination.
-- Search: Structured lattice traversal.
-- Synthesis: Constraint-guided without randomness.
-- Replay: Identical novelty on re-run.
+- Creativity emerges from deterministic transformation of inputs.
+- Structured search and constraint-based synthesis generate novelty.
+- No reliance on randomness; all outputs are replayable with identical results.

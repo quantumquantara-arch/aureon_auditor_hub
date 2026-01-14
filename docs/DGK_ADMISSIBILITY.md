@@ -1,4 +1,4 @@
 ﻿DGK Admissibility Invariants:
-- Reproducible bit-for-bit from inputs.
-- No stochastic residue in outputs.
-- Binary pass/fail based on hash match.
+- Outputs must be reproducible bit-for-bit from declared inputs.
+- Outputs must contain no stochastic residue (e.g., no randomness).
+- Admissibility is binary: pass if invariants hold, fail otherwise.
