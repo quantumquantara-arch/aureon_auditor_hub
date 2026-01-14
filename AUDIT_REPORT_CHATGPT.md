@@ -15,7 +15,7 @@ Deterministic auditor hub for Aureon OS and Companion Intelligence. Includes DGK
 - **Output Evidence:** Fixed test input for Aureon determinism: 42 transformed to 1764
 - **Hash Validation:** SHA-256(Fixed test input for Aureon determinism: 42 transformed to 1764) = 37FD88D52D1299721B7B697F37DDC4419E0ADDE5611D22C46B5B77B9BECE6759
 
-The system logic adheres to strict deterministic constraints. The cryptographic evidence is consistent with the hash $expectedHash.
+The system logic adheres to strict deterministic constraints. The cryptographic evidence is consistent with the hash 37FD88D52D1299721B7B697F37DDC4419E0ADDE5611D22C46B5B77B9BECE6759.
 
 ## 3. Conclusion
 
