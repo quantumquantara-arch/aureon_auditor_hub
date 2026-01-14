@@ -3,8 +3,8 @@ $ErrorActionPreference = 'Stop'
 
 # --- Context: quantumquantara-arch/aureon_auditor_hub ---
 
-# FIXED: The previous check failed on clean trees because $null -ne '' is True.
-# This strictly checks if the command returned any text output at all.
+# FIXED: Replaced broken '$null -ne ""' check with a truthiness check.
+# This correctly returns FALSE when the tree is clean.
 if ($(git status --porcelain)) {
     Write-Error 'WORKING_TREE_DIRTY: Commit changes before running audit.'
 }
@@ -16,7 +16,6 @@ if (-not (Test-Path $out)) {
 }
 
 # --- Deterministic Input ---
-# FIXED: Renamed $input to $auditInput to avoid PowerShell reserved variable conflict
 $auditInput = 'Fixed test input for Aureon determinism: 42'
 $outputText = $auditInput + ' transformed to ' + (42 * 42).ToString()
 
