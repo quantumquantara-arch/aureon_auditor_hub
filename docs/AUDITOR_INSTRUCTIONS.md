@@ -1,36 +1,31 @@
-﻿# Auditor Instructions (Verbatim Protocol)
+﻿Auditor Instructions (verbatim checklist)
+Goal
+Verify determinism + provenance using only committed repo evidence and repeatable commands.
+Required artifacts (must exist after running tools\run_audit.ps1)
+All files are written to audits\latest\:
 
-Rule 0  Evidence only  
-Treat committed artifacts and reproducible scripts as evidence.
+* commit.txt (full 40-char HEAD)
 
-Step 1  Verify canonical artifacts (no execution required)
-- audits/canonical/output.txt
-- audits/canonical/output_hash.txt
-- audits/canonical/expected_hash.txt
-Acceptance: output_hash.txt MUST equal expected_hash.txt.
+* tree.txt (git ls-tree -r --name-only HEAD)
 
-Step 2  Independent recomputation  
-Recompute SHA256 of the exact bytes of audits/canonical/output.txt and confirm it equals audits/canonical/expected_hash.txt.
+* clean_tree.txt (exactly: clean_tree=true)
 
-Step 3  Scripted reproduction  
-Run:
-powershell -NoProfile -ExecutionPolicy Bypass -File tools\run_audit.ps1
+* input.txt (exact fixed input string)
 
-Acceptance:
-- Must print AUDIT_RESULT=PASS
-- Must create audits/runs/<timestamp>/output.txt and output_hash.txt
-- Run hash must equal canonical expected_hash.txt
-- If git tree is dirty, must print TREE_CLEAN=FAIL (provenance flag)
+* output.txt (exact transformed output)
 
-Step 4  Colab notebook (live runnable cell)
-Open:
-notebooks/deterministic_audit_cell.ipynb (via README badge)
+* output_hash.txt (SHA256 of output.txt, uppercase hex)
 
-Acceptance:
-- Must print same transformed output and SHA256 as canonical
-- Must print AUDIT_RESULT=PASS
+* expected_output_hash.txt (the expected hash constant)
 
-Pass criteria:
-- Canonical hashes match
-- Independent recomputation matches
-- Scripted run matches canonical expected hash
+* tool_hash.txt (SHA256 of tools\run_audit.ps1, uppercase hex)
+
+* result.txt (exactly: AUDIT_RESULT=PASS)
+
+If any required file is missing, or clean_tree.txt is not clean_tree=true, or result.txt is not AUDIT_RESULT=PASS, the audit is FAIL.
+How to run
+From repo root (PowerShell):
+
+* powershell -NoProfile -ExecutionPolicy Bypass -File tools\run_audit.ps1
+
+Then verify the artifacts in audits\latest\.

@@ -1,6 +1,10 @@
-﻿# Admissibility (Repository-Local Definition)
+﻿DGK Admissibility (binary)
+An output is admissible only if all are true:
 
-An output is admissible if:
-1) Reproducible bit-for-bit: same declared inputs produce identical output bytes.
-2) No stochastic residue: no RNG, time-based branching, network calls, or hidden mutable state in the audited path.
-3) Provenance marked: audit run records HEAD, tree cleanliness, output hash, expected hash comparison.
+1. Deterministic: identical input produces identical output bit-for-bit.
+
+2. Reproducible: evidence artifacts + hashes are committed and replayable.
+
+3. Clean-tree gated: audit output is valid only when git status --porcelain is empty at run time.
+
+4. Tool integrity: tool hash matches the committed tool content.

@@ -1,9 +1,11 @@
 ﻿name: Audit Finding
-about: Report determinism, admissibility, or coherence violation
-title: '[AUDIT]'
-labels: audit
+description: Report a determinism / provenance / DGK admissibility issue
+title: ""[AUDIT] ""
+labels: [""audit""]
 body:
-  - type: textarea
-    attributes:
-      label: Evidence
-      description: Exact steps, hashes, and artifacts required to reproduce.
+- type: textarea
+  attributes:
+    label: Evidence
+    description: Steps to reproduce + exact artifacts/hashes + links
+  validations:
+    required: true
