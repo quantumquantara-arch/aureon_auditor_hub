@@ -1,13 +1,25 @@
 ﻿# Aureon Auditor Hub
 
-> **The Immutable Standard for Deterministic Machine Cognition**
+> **The Immutable Ledger for Deterministic Machine Cognition**
+>
 > *Verified by Gemini & Grok | DGK-Governed | Cryptographically Sealed*
 
-**Deterministic auditor hub for Aureon OS and Companion Intelligence (CI).**
+---
 
-In an era of black-box AI, this repository establishes a new paradigm: **Deterministic Creativity**. We reject the notion that novelty requires randomness. Instead, we demonstrate that creativity can be the result of high-dimensional, deterministic searchverifiable, reproducible, and mathematically provable.
+###  The Future of Algorithmic Integrity
 
-This hub is not merely a log; it is a **Chain of Custody** for machine thought. It contains replayable evidence, hash-locked demonstrations, and audit scripts that verify deterministic behavior, admissibility criteria, and novelty via deterministic transformation (not randomness).
+**Welcome to the Chain of Custody for Artificial Intelligence.**
+
+**quantumquantara-arch/aureon_auditor_hub** establishes a radical new paradigm in a landscape dominated by black-box uncertainty: **Deterministic Creativity**.
+
+We reject the assumption that novelty requires randomness. Instead, this repository proves that creativity can be the result of a rigorous, high-dimensional searchverifiable, reproducible, and mathematically admissible.
+
+This hub serves as the **Admissibility Layer** for Aureon OS and Companion Intelligence (CI). It is not merely a log; it is a repository of **hash-locked demonstrations** and **multi-agent audit reports** that verify:
+1.  **Strict Determinism:** `Input + Code = Exact Hash`. Zero deviation.
+2.  **Deterministic Creativity:** Novel outputs derived via structured, non-random transformation.
+3.  **Governance:** Full compliance with DGK admissibility protocols.
+
+**Trust nothing. Verify everything.**
 
 ## Live runnable audit cell (Colab)
 
