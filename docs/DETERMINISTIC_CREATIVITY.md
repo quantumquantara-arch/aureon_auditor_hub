@@ -1,5 +1,9 @@
 ﻿Deterministic Creativity
 
-Aureon does not use probabilistic response modes.
-Creativity emerges from deterministic transformation, structured search, and composition under DGK constraints.
-Determinism and creativity are not contradictory.
+Creativity in Aureon does not rely on randomness.
+Novel outputs are produced through:
+- Deterministic transformation
+- Constraint-guided synthesis
+- Structured search over finite spaces
+
+Replay of the same inputs yields identical outputs.
